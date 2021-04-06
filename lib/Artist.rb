@@ -31,9 +31,7 @@ class Artist
 
   def add_song(song)
    #binding.pry
-   song.artist = self unless song.artist == self
-      @songs << song unless @songs.include?(song)
-   @songs
+   song.artist = self unless song.artist 
   end
   
    def songs
@@ -47,7 +45,7 @@ class Artist
 
   def genres
     @new_array = []
-    @songs.each do |song|
+    songs.each do |song|
       if @new_array.include?(song.genre)
         nil
       else
