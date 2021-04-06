@@ -32,7 +32,7 @@ class Genre
   end
 
   def artists
-    songs.map {|song| song.artist}
+    songs.map {|song| song.artist}.uniq
     # @new_array = []
     # songs.each do |song|
     #   if @new_array.include?(song.artist)
