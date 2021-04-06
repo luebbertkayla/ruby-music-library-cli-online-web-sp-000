@@ -1,7 +1,7 @@
 require "pry"
 
 class Artist
-  attr_accessor :name, :song, :musiclibrarycontroller, :musicimporter
+  attr_accessor :name
   extend Concerns::Findable
   @@all = []
 
